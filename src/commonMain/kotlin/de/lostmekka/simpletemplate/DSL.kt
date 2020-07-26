@@ -77,9 +77,9 @@ class SimpleTemplateBuilder : TemplateBuilder()
 
 @TemplateDsl
 class IteratingTemplateBuilder(
-    @TemplateDsl
+    @property:TemplateDsl
     val index: Int,
-    @TemplateDsl
+    @property:TemplateDsl
     val total: Int
 ) : TemplateBuilder() {
     @TemplateDsl
